@@ -18,7 +18,8 @@ class TestController extends Controller
     public function getAvatarUri(Request $request)
     {
         try {
-            return "<img src='" . $this->gravatarService->getAvatar(md5(time())) . "'>";
+            $email = $request->input('email');
+            return "<img src='" . $this->gravatarService->getAvatar($email) . "'>";
         } catch (\Exception $exception) {
             dd($exception->getMessage());
         }
