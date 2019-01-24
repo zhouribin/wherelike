@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -69,10 +69,10 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">首页</a>
+                        <a href="{{ url('/home') }}">Home</a>
                     @else
-                        <a href="{{ route('login') }}">登录</a>
-                        <a href="{{ route('register') }}">注册</a>
+                        <a href="{{ route('login') }}">Login</a>
+                        <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
             @endif
@@ -82,10 +82,10 @@
                     WHERELIKE
                 </div>
 
-                {{--<div class="links">--}}
-                    {{--<a href="https://github.com/zhouribin" target="_blank">GitHub</a>--}}
-                    {{--<a href="https://umember.cn" target="_blank">Umember.cn</a>--}}
-                {{--</div>--}}
+                <div class="links">
+                    <a href="https://github.com/zhouribin">GitHub</a>
+                    <a href="https://umember.cn">Umember.cn</a>
+                </div>
             </div>
         </div>
     </body>
