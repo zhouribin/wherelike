@@ -83,8 +83,8 @@
                 </div>
 
                 <div class="links">
-                    <a href="https://github.com/zhouribin">GitHub</a>
-                    <a href="https://umember.cn">Umember.cn</a>
+                    <a href="https://github.com/zhouribin" target="_blank">GitHub</a>
+                    <a href="https://umember.cn" target="_blank">Umember.cn</a>
                 </div>
             </div>
         </div>
