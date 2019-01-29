@@ -69,10 +69,10 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">首页</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a href="{{ route('login') }}">登录</a>
+                        <a href="{{ route('register') }}">注册</a>
                     @endauth
                 </div>
             @endif
@@ -84,7 +84,6 @@
 
                 <div class="links">
                     <a href="https://github.com/zhouribin" target="_blank">GitHub</a>
-                    <a href="https://umember.cn" target="_blank">Umember.cn</a>
                 </div>
             </div>
         </div>
