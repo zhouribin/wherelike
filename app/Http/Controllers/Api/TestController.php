@@ -23,5 +23,6 @@ class TestController extends Controller
         } catch (\Exception $exception) {
             dd($exception->getMessage());
         }
+
     }
 }
