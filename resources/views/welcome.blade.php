@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    WHERELIKE
+                    From Apprentice To Artisan
                 </div>
 
                 <div class="links">
