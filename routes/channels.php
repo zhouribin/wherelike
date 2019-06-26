@@ -11,6 +11,8 @@
 |
 */
 
-Broadcast::channel('App.User.{id}', function ($user, $id) {
-    return (int) $user->id === (int) $id;
-});
+use Illuminate\Support\Facades\Broadcast;
+
+//Broadcast::channel('sec.channel.{gid}.{orderid}', function ($user, $gid, $orderid) {
+//    return true;
+//});
